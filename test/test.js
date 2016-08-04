@@ -165,9 +165,9 @@ suite('Path Resolver', function() {
     assert.equal(actual, expected, 'relative');
   });
 
-  test('Resolve Paths with <base>', function() {
+  test('Resolve Paths with <base> hrefs without trailing /', function() {
     var htmlBase = [
-      '<base href="zork">',
+      '<base href="zork/my-element.html">',
       '<link rel="import" href="../polymer/polymer.html">',
       '<link rel="stylesheet" href="my-element.css">',
       '<dom-module id="my-element">',
